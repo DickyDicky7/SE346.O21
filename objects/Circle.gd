@@ -1,3 +1,4 @@
+class_name Circle
 extends Area2D   ;
 
 signal full_orbit;

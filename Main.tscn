@@ -1,13 +1,16 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://UI/Screens.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/audio/Music_Light-Puzzles.ogg" type="AudioStream" id=4]
 [ext_resource path="res://UI/Background.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/audio/1-05. ShowCase (Gacha).mp3" type="AudioStream" id=6]
 
 [node name="Main" type="Node"]
 script = ExtResource( 1 )
+bgm1 = ExtResource( 6 )
+bgm2 = ExtResource( 4 )
 
 [node name="StartPosition" type="Position2D" parent="."]
 position = Vector2( 240, 700 )

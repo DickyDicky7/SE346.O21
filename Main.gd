@@ -1,5 +1,8 @@
 extends Node;
 
+export var bgm1 : AudioStream;
+export var bgm2 : AudioStream;
+
 var Circle = preload("res://objects/Circle.tscn");
 var Jumper = preload("res://objects/Jumper.tscn");
 
@@ -17,7 +20,7 @@ func _ready():
 #	Settings.admob = admob;
 #	admob.load_banner      ();
 #	admob.load_interstitial();
-#	randomize()
+	randomize ();
 	load_score();
 	$HUD. hide();
 	$Background/ColorRect.color = Settings.theme["background"];
@@ -88,6 +91,7 @@ func _on_Jumper_died():
 #			admob.show_interstitial();
 #		else:
 #			admob.show_banner      ();
+	Supabase.database.rpc("save_score", { id = Settings.supabase_user.id , new_score = score });
 
 func load_score():
 	var f = File.new();

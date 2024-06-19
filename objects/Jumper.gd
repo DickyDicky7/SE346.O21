@@ -1,4 +1,5 @@
-extends Area2D;
+class_name Jumper
+extends    Area2D;
 
 signal captured;
 signal died    ;

@@ -8,16 +8,261 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "AuthTask",
+"language": "GDScript",
+"path": "res://addons/supabase/Auth/auth_task.gd"
+}, {
+"base": "Area2D",
+"class": "Circle",
+"language": "GDScript",
+"path": "res://objects/Circle.gd"
+}, {
+"base": "Reference",
+"class": "DatabaseTask",
+"language": "GDScript",
+"path": "res://addons/supabase/Database/database_task.gd"
+}, {
+"base": "PanelContainer",
+"class": "DefaultButton",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/button/default/default_button.gd"
+}, {
+"base": "Area2D",
+"class": "Jumper",
+"language": "GDScript",
+"path": "res://objects/Jumper.gd"
+}, {
+"base": "TextButton",
+"class": "ModeButton",
+"language": "GDScript",
+"path": "res://supabase-ui/components/mode_btn/mode_btn.gd"
+}, {
+"base": "DefaultButton",
+"class": "OutlineButton",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/button/outline/outline_button.gd"
+}, {
+"base": "DefaultButton",
+"class": "PrimaryButton",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/button/primary/primary_button.gd"
+}, {
+"base": "Reference",
+"class": "RealtimeChannel",
+"language": "GDScript",
+"path": "res://addons/supabase/Realtime/realtime_channel.gd"
+}, {
+"base": "Node",
+"class": "RealtimeClient",
+"language": "GDScript",
+"path": "res://addons/supabase/Realtime/realtime_client.gd"
+}, {
+"base": "VBoxContainer",
+"class": "SCheckBox",
+"language": "GDScript",
+"path": "res://supabase-ui/data_input/checkbox/checkbox.gd"
+}, {
+"base": "Label",
+"class": "SErrorLabel",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/typography/error_label/err_label.gd"
+}, {
+"base": "PanelContainer",
+"class": "SInput",
+"language": "GDScript",
+"path": "res://supabase-ui/data_input/input/input.gd"
+}, {
+"base": "Label",
+"class": "SLabel",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/typography/base_label/label.gd"
+}, {
+"base": "DefaultButton",
+"class": "SLinkButton",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/button/link/link_button.gd"
+}, {
+"base": "PanelContainer",
+"class": "SPanel",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/containers/panel/_panel.gd"
+}, {
+"base": "PopupPanel",
+"class": "SPopup",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/containers/popup/_popup.gd"
+}, {
+"base": "Node",
+"class": "StorageBucket",
+"language": "GDScript",
+"path": "res://addons/supabase/Storage/storage_bucket.gd"
+}, {
+"base": "Reference",
+"class": "StorageTask",
+"language": "GDScript",
+"path": "res://addons/supabase/Storage/storage_task.gd"
+}, {
+"base": "Node",
+"class": "SupabaseAuth",
+"language": "GDScript",
+"path": "res://addons/supabase/Auth/auth.gd"
+}, {
+"base": "Reference",
+"class": "SupabaseAuthError",
+"language": "GDScript",
+"path": "res://addons/supabase/Auth/auth_error.gd"
+}, {
+"base": "PanelContainer",
+"class": "SupabaseAuthPanel",
+"language": "GDScript",
+"path": "res://supabase-ui/components/auth/auth.gd"
+}, {
+"base": "Node",
+"class": "SupabaseDatabase",
+"language": "GDScript",
+"path": "res://addons/supabase/Database/database.gd"
+}, {
+"base": "Reference",
+"class": "SupabaseDatabaseError",
+"language": "GDScript",
+"path": "res://addons/supabase/Database/database_error.gd"
+}, {
+"base": "Reference",
+"class": "SupabaseQuery",
+"language": "GDScript",
+"path": "res://addons/supabase/Database/query.gd"
+}, {
+"base": "Node",
+"class": "SupabaseRealtime",
+"language": "GDScript",
+"path": "res://addons/supabase/Realtime/realtime.gd"
+}, {
+"base": "Node",
+"class": "SupabaseStorage",
+"language": "GDScript",
+"path": "res://addons/supabase/Storage/storage.gd"
+}, {
+"base": "Reference",
+"class": "SupabaseStorageError",
+"language": "GDScript",
+"path": "res://addons/supabase/Storage/storage_error.gd"
+}, {
+"base": "Reference",
+"class": "SupabaseUser",
+"language": "GDScript",
+"path": "res://addons/supabase/Auth/user.gd"
+}, {
+"base": "DefaultButton",
+"class": "TextButton",
+"language": "GDScript",
+"path": "res://supabase-ui/basic/button/text/text_button.gd"
+} ]
+_global_script_class_icons={
+"AuthTask": "",
+"Circle": "",
+"DatabaseTask": "",
+"DefaultButton": "",
+"Jumper": "",
+"ModeButton": "",
+"OutlineButton": "",
+"PrimaryButton": "",
+"RealtimeChannel": "",
+"RealtimeClient": "",
+"SCheckBox": "",
+"SErrorLabel": "",
+"SInput": "",
+"SLabel": "",
+"SLinkButton": "",
+"SPanel": "",
+"SPopup": "",
+"StorageBucket": "",
+"StorageTask": "",
+"SupabaseAuth": "",
+"SupabaseAuthError": "",
+"SupabaseAuthPanel": "",
+"SupabaseDatabase": "",
+"SupabaseDatabaseError": "",
+"SupabaseQuery": "",
+"SupabaseRealtime": "",
+"SupabaseStorage": "",
+"SupabaseStorageError": "",
+"SupabaseUser": "",
+"TextButton": ""
+}
+
+[admob]
+
+config={
+"banner": {
+"position": 1,
+"respect_safe_area": true,
+"show_instantly": true,
+"size": "BANNER",
+"unit_ids": {
+"Android": {
+"standard": "ca-app-pub-3940256099942544/6300978111"
+},
+"iOS": {
+"standard": "ca-app-pub-3940256099942544/2934735716"
+}
+}
+},
+"debug": {
+"is_debug_on_release": false,
+"is_real": true,
+"is_test_europe_user_consent": false
+},
+"general": {
+"is_enabled": true,
+"is_for_child_directed_treatment": false,
+"max_ad_content_rating": "PG"
+},
+"interstitial": {
+"unit_ids": {
+"Android": {
+"standard": "ca-app-pub-3940256099942544/1033173712"
+},
+"iOS": {
+"standard": "ca-app-pub-3940256099942544/4411468910"
+}
+}
+},
+"rewarded": {
+"unit_ids": {
+"Android": {
+"standard": "ca-app-pub-3940256099942544/5224354917"
+},
+"iOS": {
+"standard": "ca-app-pub-3940256099942544/1712485313"
+}
+}
+},
+"rewarded_interstitial": {
+"unit_ids": {
+"Android": {
+"standard": "ca-app-pub-3940256099942544/5354046379"
+},
+"iOS": {
+"standard": "ca-app-pub-3940256099942544/6978759866"
+}
+}
+}
+}
+
 [application]
 
-config/name="CircleJump"
+config/name="ClickingJump"
 run/main_scene="res://Main.tscn"
+boot_splash/bg_color=Color( 0.1, 0.1, 0.1, 1 )
 config/icon="res://cj_icon_64.png"
 config/quit_on_go_back=false
 
 [autoload]
 
 Settings="*res://Settings.gd"
+Supabase="*res://addons/supabase/Supabase/supabase.gd"
 
 [display]
 
@@ -27,9 +272,14 @@ window/handheld/orientation="portrait"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/supabase/plugin.cfg" )
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+theme/custom_font="res://default_fnt.tres"
 
 [input_devices]
 
@@ -41,4 +291,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/filters/msaa=4
+quality/depth/hdr.mobile=true
 environment/default_environment="res://default_env.tres"

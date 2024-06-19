@@ -1,17 +1,17 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://UI/HUD.gd" type="Script" id=1]
-[ext_resource path="res://assets/fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://assets/fonts/xolonium_64.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/fonts/font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/fonts/Fonts/KenneyFutureSquare.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 32
 extra_spacing_top = 10
-font_data = ExtResource( 2 )
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 69
-font_data = ExtResource( 2 )
+font_data = ExtResource( 4 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "bonus"
@@ -158,15 +158,15 @@ custom_constants/separation = 10
 alignment = 2
 
 [node name="Label" type="Label" parent="ScoreBox/HBoxContainer"]
-margin_left = 289.0
-margin_right = 385.0
+margin_left = 290.0
+margin_right = 390.0
 margin_bottom = 78.0
 size_flags_vertical = 5
 custom_fonts/font = SubResource( 1 )
 text = "Score"
 
 [node name="Score" type="Label" parent="ScoreBox/HBoxContainer"]
-margin_left = 395.0
+margin_left = 400.0
 margin_right = 440.0
 margin_bottom = 78.0
 grow_horizontal = 0
@@ -192,7 +192,7 @@ __meta__ = {
 margin_left = 20.0
 margin_top = 20.0
 margin_right = 460.0
-margin_bottom = 104.0
+margin_bottom = 99.0
 size_flags_vertical = 5
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 2 )
@@ -210,9 +210,6 @@ text = "Message"
 align = 1
 valign = 1
 clip_text = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="StartTip" type="Label" parent="."]
 visible = false

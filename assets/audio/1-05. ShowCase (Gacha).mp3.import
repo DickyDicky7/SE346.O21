@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/1-05. ShowCase (Gacha).mp3-96beaab6fa1e8c577bdf34468c4aa1e8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/1-05. ShowCase (Gacha).mp3"
+dest_files=[ "res://.import/1-05. ShowCase (Gacha).mp3-96beaab6fa1e8c577bdf34468c4aa1e8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
