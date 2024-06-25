@@ -21,6 +21,6 @@ Engine: Godot 3.x<br/>(The newer the better)
 <p align="center">
 Game demo up to this point (June 22, 2024)<br/>
   
-
+https://github.com/DickyDicky7/SE346.O21/assets/87304213/ba843741-4403-4629-a24a-7c165e5e734b
 
 </p>
